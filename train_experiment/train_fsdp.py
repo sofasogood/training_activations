@@ -140,7 +140,9 @@ def main():
                         'loss': loss.item(),
                     }, checkpoint_path)
                     print(f"Saved checkpoint to: {checkpoint_path}")
-                
+                # experimental: token saving
+                tok_path = os.path.join(act_dir, f"input_ids_step_{step}.pt")
+                torch.save(batch["input_ids"].detach().cpu(), tok_path)
                 # Run hooked transformer on current batch
                 if hooked_transformer is not None:
                     print(f"Running hooked transformer forward pass for activation capture at step {step}")

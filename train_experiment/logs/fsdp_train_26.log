@@ -1,0 +1,8 @@
+Saving checkpoints to: /home/ubuntu/fs2/train_experiment/checkpoints
+Initialized process group: rank=0, world_size=1, local_rank=0
+Saving activations to: /home/ubuntu/fs2/train_experiment/activations
+Loaded pretrained model gpt2 into HookedTransformer
+Registered activation hook on block 4
+[0] loss=4.088
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_0.pt
+Running hooked transformer forward pass for activation capture

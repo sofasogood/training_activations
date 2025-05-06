@@ -1,0 +1,46 @@
+Saving checkpoints to: /home/ubuntu/fs2/train_experiment/checkpoints
+Initialized process group: rank=0, world_size=1, local_rank=0
+Saving activations to: /home/ubuntu/fs2/train_experiment/activations
+Loaded pretrained model gpt2 into HookedTransformer
+Registered activation hook on block 4
+[0] loss=5.124
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_0.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[20] loss=2.397
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_20.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[40] loss=1.881
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_40.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[60] loss=1.997
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_60.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[80] loss=2.624
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_80.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[100] loss=1.640
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_100.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[120] loss=1.922
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_120.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[140] loss=2.020
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_140.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[160] loss=2.103
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_160.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+[180] loss=2.474
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_180.pt
+Running hooked transformer forward pass for activation capture
+Saving activation to: /home/ubuntu/fs2/train_experiment/activations/act_block4_output.pt
+Removed activation hook

@@ -1,0 +1,24 @@
+/bin/bash: /home/ubuntu/miniconda/envs/fsdp/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Traceback (most recent call last):
+  File "/home/ubuntu/fs2/train_experiment/train_fsdp.py", line 106, in <module>
+    main()
+  File "/home/ubuntu/fs2/train_experiment/train_fsdp.py", line 93, in main
+    for step, batch in enumerate(loader):
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/home/ubuntu/fs2/train_experiment/train_fsdp.py", line 74, in collate
+    toks = tok(texts, return_tensors="pt", padding=True, truncation=True)
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2887, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2975, in _call_one
+    return self.batch_encode_plus(
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3168, in batch_encode_plus
+    padding_strategy, truncation_strategy, max_length, kwargs = self._get_padding_truncation_strategies(
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2789, in _get_padding_truncation_strategies
+    raise ValueError(
+ValueError: Asking to pad but the tokenizer does not have a padding token. Please select a token to use as `pad_token` `(tokenizer.pad_token = tokenizer.eos_token e.g.)` or add a new pad token via `tokenizer.add_special_tokens({'pad_token': '[PAD]'})`.
+srun: error: 192-222-55-57: task 0: Exited with exit code 1

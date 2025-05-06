@@ -1,0 +1,28 @@
+/bin/bash: /home/ubuntu/miniconda/envs/fsdp/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+srun: cluster configuration lacks support for cpu binding
+[I socket.cpp:576] [c10d] The server socket has started to listen on [::]:29501.
+[W socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29501 (errno: 98 - Address already in use).
+[W socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29501 (errno: 98 - Address already in use).
+[E socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "/home/ubuntu/fs2/train_experiment/train_fsdp.py", line 57, in <module>
+    main()
+  File "/home/ubuntu/fs2/train_experiment/train_fsdp.py", line 11, in main
+    dist.init_process_group("nccl")
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 74, in wrapper
+    func_return = func(*args, **kwargs)
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1141, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 241, in _env_rendezvous_handler
+    store = _create_c10d_store(master_addr, master_port, rank, world_size, timeout)
+  File "/home/ubuntu/miniconda/envs/fsdp/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 172, in _create_c10d_store
+    return TCPStore(
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:29501 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:29501 (errno: 98 - Address already in use).
+[I socket.cpp:849] [c10d] The client socket has connected to [192-222-55-57]:29501 on [192-222-55-57]:34640.
+srun: error: 192-222-55-57: task 0: Exited with exit code 1
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+slurmstepd-192-222-55-57: error: *** STEP 9.0 ON 192-222-55-57 CANCELLED AT 2025-05-05T06:24:46 ***
+slurmstepd-192-222-55-57: error: *** JOB 9 ON 192-222-55-57 CANCELLED AT 2025-05-05T06:24:46 ***
+srun: forcing job termination
+srun: error: 192-222-55-57: task 1: Terminated

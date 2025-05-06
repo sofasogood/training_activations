@@ -1,0 +1,4 @@
+/bin/bash: /home/ubuntu/miniconda/envs/fsdp/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/home/ubuntu/miniconda/envs/fsdp/bin/python: can't open file '/home/train_fsdp.py': [Errno 2] No such file or directory
+/home/ubuntu/miniconda/envs/fsdp/bin/python: can't open file '/home/train_fsdp.py': [Errno 2] No such file or directory
+srun: error: 192-222-55-57: tasks 0-1: Exited with exit code 2

@@ -1,0 +1,9 @@
+/bin/bash: /home/ubuntu/miniconda/envs/fsdp/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Traceback (most recent call last):
+  File "/home/ubuntu/fs2/train_experiment/train_fsdp.py", line 108, in <module>
+    main()
+  File "/home/ubuntu/fs2/train_experiment/train_fsdp.py", line 104, in main
+    for h in hooks: h.remove()
+TypeError: 'RemovableHandle' object is not iterable
+srun: error: 192-222-55-57: task 0: Exited with exit code 1

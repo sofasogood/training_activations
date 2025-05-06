@@ -1,0 +1,12 @@
+Initialized process group: rank=0, world_size=1, local_rank=0
+Loaded pretrained model gpt2 into HookedTransformer
+[0] loss=5.146
+[20] loss=2.499
+[40] loss=1.591
+[60] loss=2.232
+[80] loss=1.987
+[100] loss=1.708
+[120] loss=2.318
+[140] loss=2.422
+[160] loss=2.616
+[180] loss=2.548

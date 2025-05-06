@@ -1,0 +1,24 @@
+Saving checkpoints to: /home/ubuntu/fs2/train_experiment/checkpoints
+Initialized process group: rank=0, world_size=1, local_rank=0
+Loaded pretrained model gpt2 into HookedTransformer
+Saving activations to: /home/ubuntu/fs2/train_experiment/activations
+[0] loss=5.978
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_0.pt
+[20] loss=2.352
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_20.pt
+[40] loss=2.080
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_40.pt
+[60] loss=1.860
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_60.pt
+[80] loss=2.109
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_80.pt
+[100] loss=2.220
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_100.pt
+[120] loss=2.466
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_120.pt
+[140] loss=1.779
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_140.pt
+[160] loss=2.159
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_160.pt
+[180] loss=1.925
+Saved checkpoint to: /home/ubuntu/fs2/train_experiment/checkpoints/checkpoint_step_180.pt

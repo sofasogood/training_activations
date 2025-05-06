@@ -1,0 +1,2 @@
+Initialized process group: rank=0, world_size=1, local_rank=0
+Loaded pretrained model gpt2 into HookedTransformer
